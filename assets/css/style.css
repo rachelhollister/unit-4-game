@@ -1,20 +1,69 @@
 
-body {
-background: url("../images/sand.jpg");
-}
 
 h1 {
     text-align: center;
-    font-family: 'Righteous', cursive;
-    font-size: 70px;
-    margin: 25px, 100px, 5px, 100px;
-    padding: 20px;
+    font-family: 'Staatliches', cursive;
+    font-size: 140px;
+    color: white;
+    margin: 100px, 100px, 5px, 100px;
+    padding: 50px;
+    animation: colorchange 3s infinite; 
 }
 
-.game {
-font-family: 'Righteous', cursive; 
-font-size: 50px;
-text-align: center;
-margin: 20px;
-padding: 0px, 45px, 0px, 45px;
+  
+@keyframes colorchange
+{
+  0%   {background: rgb(114, 228, 120);}
+  25%  {background: rgb(17, 212, 137);}
+  50%  {background: rgb(60, 58, 150);}
+  75%  {background: rgb(91, 24, 153);}
+  100%  {background:rgb(114, 228, 120);}
 }
+
+.robots {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px, 50px, 100px, 50px;
+}
+
+.robot {
+    height: 400px;
+    width: 400px;
+    padding: 100px, 50px, 100px, 50px;
+}
+
+.result
+{
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 80px;
+    color:  rgb(114, 228, 120);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.previous {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+    color:rgb(114, 228, 120);
+    margin-top: -150px;
+    margin-bottom: 10px;
+}
+
+.win {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color:rgb(150, 142, 142);
+    font-size: 50px;
+
+}
+
+.lost {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color: rgb(150, 142, 142);
+    font-size: 50px;
+}
+
